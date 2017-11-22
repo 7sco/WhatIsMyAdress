@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.idBtn2:
                 Intent intent= new Intent(MainActivity.this, RecyclerActivity.class);
                 intent.putExtra("sharedpref", SHARED_PREFS_KEY);
+                startActivity(intent);
                 break;
 
 
