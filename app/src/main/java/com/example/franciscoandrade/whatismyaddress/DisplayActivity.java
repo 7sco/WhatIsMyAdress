@@ -18,5 +18,13 @@ public class DisplayActivity extends AppCompatActivity {
 
         text1=(TextView)findViewById(R.id.text1);
         text2=(TextView)findViewById(R.id.text2);
+
+        text1.setText(getIntent().getExtras().getString("email"));
+        int counter=0;
+        for(int i=0;i<text1.getText().length();i++){
+            counter++;
+        }
+        text2.setText("Length= "+counter);
+
     }
 }
